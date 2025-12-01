@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pengiriman Data</title>
+    <style>
+        /* FONT FAMILY SESUAI PERMINTAAN USER DARI SOURCE CODE BCA */
+        body {
+            font-family: 'Calibri', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #6d6d6d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .header-bca {
+            width: 100%;
+            background-color: white;
+            padding: 15px 0;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .header-bca img {
+            height: 40px;
+            margin-left: 50px;
+            display: block;
+        }
+
+        /* CONTAINER UTAMA (WHITE BOX) */
+        .content-wrapper {
+            flex-grow: 1; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 60px 40px;
+            margin: 50px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+        }
+
+        /* JUDUL KONFIRMASI */
+        .success-title {
+            color: #004d99;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+        
+        .success-icon {
+            color: #00aaff; /* Biru muda */
+            font-size: 60px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .success-message {
+            font-size: 16px;
+            color: #6d6d6d;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .important-note {
+            font-size: 14px;
+            color: #ff5722; /* Warna oranye/merah untuk perhatian */
+            font-weight: bold;
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ff5722;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* TOMBOL KEMBALI (OPSIONAL) */
+        .btn-back {
+            background-color: #0070c0;
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 30px;
+        }
+
+        .btn-back:hover {
+            background-color: #005a9e;
+        }
+
+        /* FOOTER INFO */
+        .info-label {
+            font-size: 14px;
+            color: #0070c0;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            display: block;
+        }
+        
+        /* FOOTER DISCLAIMER */
+        .disclaimer-area {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            background-color: transparent;
+            font-size: 12px;
+            color: #6d6d6d;
+        }
+        
+        /* FOOTER BIRU TEBAL */
+        .footer-bca {
+            width: 100%;
+            background-color: #004d99;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        .disclaimer-area a {
+            color: #0070c0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bca">
+        <img src="logo (1).png" alt="Logo BCA">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <span class="success-icon">✔️</span>
+            
+            <h1 class="success-title">DATA BERHASIL DIKIRIM</h1>
+            
+            <span class="success-message">
+                Terima kasih, data Anda telah berhasil kami terima.
+                <br>
+                Kami akan segera memproses informasi yang Anda berikan.
+                <br>
+                Mohon tunggu konfirmasi lebih lanjut dari tim kami melalui email atau nomor telepon yang terdaftar.
+            </span>
+            
+            <div class="important-note">
+                Penting: Jika Anda tidak menerima email konfirmasi dalam 1x24 jam, <br> silakan hubungi Halo BCA.
+            </div>
+
+            <a href="index.html" class="btn-back">Kembali ke Halaman Utama</a>
+            
+            <label class="info-label"> Info lebih lanjut, hubungi Halo BCA 1500888. </label>
+        </div>
+        
+        <div class="disclaimer-area">
+            BCA berizin dan diawasi oleh Otoritas Jasa Keuangan &amp; Bank Indonesia.
+        </div>
+        <div class="disclaimer-area" style="margin-top: -10px;">
+             BCA merupakan peserta penjaminan LPS. Maksimum nilai simpanan yang dijamin LPS per Nasabah per Bank adalah Rp2 miliar. Untuk cek Tingkat Bunga Penjaminan LPS, klik <a href="#" target="_blank"><b>di sini.</b></a>
+        </div>
+    </div>
+
+    <div class="footer-bca">
+    </div>
+</body>
+</html>

